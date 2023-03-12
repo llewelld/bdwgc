@@ -3,7 +3,7 @@ Version:        8.3.0
 Release:        1
 Summary:        Boehm-Demers-Weiser Garbage Collector
 Url:            http://www.hboehm.info/gc/
-Source:         https://github.com/ivmai/bdwgc
+Source0:        %{name}-%{version}.tar.bz2
 License:        MIT
 BuildRequires:  autoconf
 BuildRequires:  libtool
