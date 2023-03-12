@@ -1,4 +1,4 @@
-Name:           libgc
+Name:           bdwgc
 Version:        8.3.0
 Release:        1
 Summary:        Boehm-Demers-Weiser Garbage Collector
@@ -12,11 +12,11 @@ BuildRequires:  libtool
 A conservative garbage collector for C and C++.
 
 %package devel
-Summary:        libgc development package
+Summary:        bdwgc development package
 Requires:       %{name} = %{version}
 
 %description devel
-Development headers and libraries for libgc - A conservative garbage collector for C and C++.
+Development headers and libraries for bdwgc - A conservative garbage collector for C and C++.
 
 %prep
 %autosetup -n %{name}-%{version}/upstream
@@ -24,7 +24,6 @@ Development headers and libraries for libgc - A conservative garbage collector f
 %build
 
 autoreconf -vif
-#automake --add-missing
 %configure --disable-docs --disable-dependency-tracking
 
 %make_build
